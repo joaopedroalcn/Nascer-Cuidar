@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe0ec 0%, #fcb7d4 50%, #f883b4 100%);
+    min-height: 100vh;
+    color: #4b234a;
+}
+.cursos-header {
+    background: linear-gradient(90deg, #f883b4 0%, #fcb7d4 100%);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem;
+    border-bottom-left-radius: 60px 30px;
+    border-bottom-right-radius: 60px 30px;
+    box-shadow: 0 4px 24px rgba(248, 131, 180, 0.15);
+}
+.cursos-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 2px 8px #f883b4a0;
+}
+.cursos-header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.cursos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    margin: 3rem auto 2rem auto;
+    max-width: 1200px;
+}
+.curso-card {
+    background: linear-gradient(135deg, #fff0f6 0%, #ffe0ec 100%);
+    border-radius: 24px;
+    box-shadow: 0 2px 12px #f883b410;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    max-width: 370px;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fcb7d4;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.curso-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px #f883b455;
+}
+.curso-card img {
+    width: 100%;
+    max-width: 260px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 8px #fcb7d433;
+    background: #fff0f6;
+}
+.curso-info h2 {
+    color: #e75480;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+.curso-info ul {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+    padding-left: 1.1rem;
+    color: #6d3a5e;
+}
+.curso-detalhe {
+    color: #a06c8a;
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
+    text-align: center;
+}
+.btn-curso {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7rem 2rem;
+    background: #e75480;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px #fcb7d433;
+    transition: background 0.2s, transform 0.2s;
+}
+.btn-curso:hover {
+    background: #f883b4;
+    transform: scale(1.04);
+}
+.cursos-contato {
+    margin: 3.5rem auto 2.5rem auto;
+    max-width: 700px;
+    background: linear-gradient(135deg, #ffe0ec 0%, #fcb7d4 100%);
+    border-radius: 30px;
+    box-shadow: 0 8px 32px #f883b410;
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+.cursos-contato h2 {
+    color: #e75480;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.btn-contato {
+    display: inline-block;
+    margin: 0.7rem 1rem 0 1rem;
+    padding: 0.8rem 2rem;
+    background: #e75480;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px #fcb7d433;
+    transition: background 0.2s, transform 0.2s;
+}
+.btn-contato:hover {
+    background: #f883b4;
+    transform: scale(1.04);
+}
+.cursos-footer {
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    background: linear-gradient(90deg, #fcb7d4 0%, #f883b4 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    border-top-left-radius: 60px 30px;
+    border-top-right-radius: 60px 30px;
+    box-shadow: 0 -4px 24px #f883b410;
+    margin-top: 3rem;
+}
+.main-nav {
+    width: 100%;
+    background: linear-gradient(90deg, #fcb7d4 0%, #f883b4 100%);
+    box-shadow: 0 2px 12px #f883b410;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.7rem 0;
+}
+.main-nav li {
+    margin: 0;
+}
+.main-nav a {
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.08rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 24px;
+    transition: background 0.2s, color 0.2s;
+}
+.main-nav a:hover, .main-nav a:focus {
+    background: #e75480;
+    color: #fff0f6;
+}
+@media (max-width: 900px) {
+    .cursos-lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .curso-card {
+        max-width: 95vw;
+    }
+}
+@media (max-width: 700px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .main-nav a {
+        display: block;
+        text-align: center;
+    }
+}
