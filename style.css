@@ -443,8 +443,6 @@ main::after {
     transform: scale(1.04);
 }
 .whatsapp-btn {
-    background: #25d366;
-    color: #fff;
     margin-bottom: 1.2rem;
     font-size: 1.1rem;
     font-weight: 700;
@@ -460,29 +458,20 @@ main::after {
     right: 2vw;
     bottom: 2vw;
     z-index: 999;
-    background: #25d366;
-    color: #fff;
-    border-radius: 50%;
     width: 64px;
     height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 16px #25d36655;
     font-size: 2.3rem;
     border: none;
     cursor: pointer;
     transition: background 0.2s, transform 0.2s;
 }
 .whatsapp-float:hover {
-    background: #128c7e;
     transform: scale(1.08);
 }
-.whatsapp-float svg {
-    width: 36px;
-    height: 36px;
-    fill: #fff;
-}
+
 .site-logo {
     display: block;
     margin: 0 auto 1.2rem auto;
@@ -735,5 +724,9 @@ footer {
     }
     .servico-card {
         padding: 1rem 0.5rem;
+    }
+    .whatsapp-float {
+        bottom: 8vw;
+        right: 5vw;
     }
 }
