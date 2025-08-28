@@ -34,7 +34,6 @@ body {
     gap: 2.5rem;
     justify-content: center;
     margin: 3rem auto 2rem auto;
-    max-width: 1200px;
 }
 .curso-card {
     background: linear-gradient(135deg, #fff0f6 0%, #ffe0ec 100%);
