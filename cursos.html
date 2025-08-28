@@ -3,31 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos - Nascer&Cuidar</title>
+    <title>Cursos - Cuidar e Nascer</title>
     <link rel="stylesheet" href="cursos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav class="main-nav" id="mainNav">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="#oferecemos">O que oferecemos</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#beneficios">Benefícios</a></li>
-            <li><a href="#depoimentos">Depoimentos</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-        </ul>
-    </nav>
     <header class="cursos-header">
         <h1>Cursos</h1>
         <p>Conhecimento, técnicas e dicas para uma experiência mais segura e acolhedora para toda a família.</p>
@@ -88,39 +70,7 @@
         </section>
     </main>
     <footer class="cursos-footer">
-        <p>&copy; 2025 Nascer&Cuidar. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Cuidar e Nascer. Todos os direitos reservados.</p>
     </footer>
-    <script>
-     // Menu Hamburguer
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const mainNav = document.getElementById('mainNav');
-    hamburgerBtn.addEventListener('click', function() {
-      mainNav.classList.toggle('open');
-      document.body.classList.toggle('menu-open');
-      const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
-      hamburgerBtn.setAttribute('aria-expanded', !expanded);
-    });
-    // Fecha menu ao clicar em um link
-    document.querySelectorAll('.main-nav a').forEach(link => {
-      link.addEventListener('click', (e) => {
-        if(window.innerWidth <= 900) {
-          mainNav.classList.remove('open');
-          document.body.classList.remove('menu-open');
-          hamburgerBtn.setAttribute('aria-expanded', false);
-          hamburgerBtn.blur();
-          // Se for navegação para outra página, fecha o menu e permite a navegação
-          if(link.getAttribute('href') && !link.getAttribute('href').startsWith('#')) {
-            // Remove o foco do link para evitar problemas de navegação
-            link.blur();
-            // Aguarda o menu fechar antes de navegar
-            setTimeout(() => {
-              window.location = link.getAttribute('href');
-            }, 200);
-            e.preventDefault();
-          }
-        }
-      });
-    });
-    </script>
 </body>
 </html>
